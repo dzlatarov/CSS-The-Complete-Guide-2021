@@ -11,17 +11,17 @@ body {
     color: green;
 }
 
-li code {
+code {
     color: red;
     font-family: 'Karantina', cursive;
 }
 
-li + li {
+ol li {
     background: black;
     color: white;
 }
 
-ol li {
+li + li {
     background: black;
     color: white;
 }
