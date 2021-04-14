@@ -71,3 +71,17 @@ body {
     color: white;
     border-bottom: 5px solid white;
 }
+
+.list-item--cta a {
+    background-color: #ff1b68;
+    color: white;    
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.list-item--cta a:hover,
+.list-item--cta a:active {
+    border: none;
+    color: #ff1b68;
+    background-color: white;
+}
