@@ -76,9 +76,11 @@ body {
 }
 
 .plan__cta:hover,
-.plan__cta:active {
+.plan__cta:active,
+.plan__cta:focus {
     background-color: white;
-    color: #0e4f1f;    
+    color: #0e4f1f; 
+    outline: none;   
 }
 
 .plan__features {
