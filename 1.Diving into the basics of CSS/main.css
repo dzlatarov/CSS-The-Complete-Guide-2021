@@ -155,3 +155,45 @@ body {
     color: #ff1b68;
     background-color: white;
 }
+
+.overview {
+    background-color: #f1155e;
+    width: 100%;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.overview-title {
+    text-align: center;
+    color: white;
+    margin: 32px;
+}
+
+.overview-items {    
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    text-align: center;
+}
+
+.overview-item {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.overview-item__description {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.overview-image {
+    background-color: #ffb3cc;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+}
