@@ -15,7 +15,19 @@ body {
 }
 
 .section-title {
-    color: #2ddf5c;
+    color: #2eb82e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plan {
+    background-color: #d5ffdc;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 8px;
+    padding: 16px;
+    vertical-align: middle;
 }
 
 #product-overview h1 {
