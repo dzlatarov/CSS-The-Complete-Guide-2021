@@ -63,3 +63,8 @@ body {
     color: #0e4f1f;
     text-decoration: none;    
 }
+
+.list-item a:hover,
+.list-item a:active {
+    color: white;
+}
