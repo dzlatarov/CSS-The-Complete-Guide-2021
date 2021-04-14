@@ -64,6 +64,23 @@ body {
     color: #0e4f1f;
 }
 
+.plan__cta {
+    background-color: #0e4f1f;
+    color: white;
+    border: 1.5px solid #0e4f1f;
+    border-radius: 8px;
+    padding: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plan__cta:hover,
+.plan__cta:active {
+    background-color: white;
+    color: #0e4f1f;    
+}
+
 .plan__features {
     list-style-type: none;
     padding: 0;
