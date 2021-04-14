@@ -48,12 +48,18 @@ body {
     vertical-align: middle;
 }
 
-.list-item {
-    display: inline-block;
-}
-
 .list-items {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.list-item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.list-item a {
+    color: #0e4f1f;
+    text-decoration: none;    
 }
