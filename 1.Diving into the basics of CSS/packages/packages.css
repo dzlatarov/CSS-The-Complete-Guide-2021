@@ -21,6 +21,7 @@ main {
     border-left: none;
     margin: 16px 0;
     width: 58%;
+    position: relative;
 }
 
 .package a {
@@ -33,6 +34,12 @@ main {
 .package__title {
     font-size: 25px;
     font-weight: bold;
+}
+
+.package__badge {
+    position: absolute;
+    top: 0;
+    left: 400px;
 }
 
 .package__subtitle {
