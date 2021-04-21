@@ -6,7 +6,6 @@ main {
 .package:active {
     box-shadow: 2px 2px 2px #0f0e0e;
     border-color: #ff5454;
-
 }
 
 .package {
@@ -53,6 +52,11 @@ main {
     border-right: none;
     border-left: 4px solid darkgreen;
     text-align: right;    
+}
+
+#free:hover,
+#free:active {
+    border-left-color: #ff5454;
 }
 
 #premium {
