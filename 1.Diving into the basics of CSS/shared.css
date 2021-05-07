@@ -28,6 +28,12 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    height: 40px;
+    display: inline-block;
+}
+
+.main-brand img {
+    height: 100%;
 }
 
 .main-nav {
