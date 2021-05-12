@@ -21,7 +21,7 @@ main {
     border: 4px solid darkgreen;
     border-left: none;
     margin: 1rem 0;
-    width: 58%;
+    width: 75%;
     position: relative;
 }
 
@@ -91,4 +91,26 @@ main {
 
 #premium .package__subtitle{
     color: #bbb;
+}
+
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 90rem;
+      }
+}
+
+@media (min-width: 90rem) {
+    .package {
+        border-left: 4px solid darkgreen;
+    }
+
+    #free {
+        border-right: 4px solid darkgreen;
+    }
+
+    #free:hover,
+    #free:active {
+        border-right-color: #ff5454;
+    }
 }
