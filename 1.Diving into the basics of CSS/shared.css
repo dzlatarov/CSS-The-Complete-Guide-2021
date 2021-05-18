@@ -164,7 +164,7 @@ main {
 }
 
 /* Button styling */
-.plan__cta {
+.button {
     background-color: #0e4f1f;
     color: white;
     border: 1.5px solid #0e4f1f;
@@ -175,12 +175,19 @@ main {
     cursor: pointer;
 }
 
-.plan__cta:hover,
-.plan__cta:active,
-.plan__cta:focus {
+.button:hover,
+.button:active,
+.button:focus {
     background-color: white;
     color: #0e4f1f; 
     outline: none;   
+}
+
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
 }
 
 /*Mobile nav*/
