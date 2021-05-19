@@ -25,6 +25,16 @@ main {
     width: 100%;
 }
 
+.signup-form .error-hint {
+    margin-top: 0.5rem;
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
 .signup-form [type="checkbox"],
 .signup-form [type="checkbox"] + label {
     display: inline-block;

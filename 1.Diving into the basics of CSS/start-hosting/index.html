@@ -61,14 +61,18 @@
                 <option value="ms">Ms.</option>
             </select>
             <label for="first-name">First name</label>
-            <input type="text" id="first-name" required>
+            <input type="text" id="first-name" name="first-name">
+            <div class="error-hint hidden">First name required!</div>
             <label for="last-name">Last name</label>
-            <input type="text" id="last-name" required>
+            <input type="text" id="last-name" name="last-name">
+            <div class="error-hint hidden">Last name required!</div>
             <label for="email">E-Mail</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email">
+            <div class="error-hint hidden">Email required!</div>
             <label for="password">Password</label>
-            <input type="password" id="password" required>
-            <input type="checkbox" id="agree-terms" required>
+            <input type="password" id="password" name="password">
+            <div class="error-hint hidden">Password required!</div>
+            <input type="checkbox" id="agree-terms" >
             <label for="agree-terms">Agree to
                 <a href="#">Terms &amp; Conditions</a>
             </label>

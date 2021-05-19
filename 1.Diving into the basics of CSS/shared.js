@@ -44,3 +44,48 @@ toggleButton.addEventListener('click', () => {
     mobileNav.classList.add('open');
     backdrop.classList.add('open');
 });
+
+
+var form = document.querySelector('.signup-form');
+var firstNameInput = document.querySelector('input[name="first-name"]');
+var lastNameInput = document.querySelector('input[name="last-name"]');
+var emailInput = document.querySelector('input[name="email"]');
+var passwordInput = document.querySelector('input[name="password"]');
+var checkboxInput = document.querySelector('input[type="checkbox"]');
+
+const validateInput = () => {
+    firstNameInput.classList.remove('invalid');
+    firstNameInput.nextElementSibling.classList.add('hidden');
+
+    lastNameInput.classList.remove('invalid');
+    lastNameInput.nextElementSibling.classList.add('hidden');
+
+    emailInput.classList.remove('invalid');
+    emailInput.nextElementSibling.classList.add('hidden');
+
+    passwordInput.classList.remove('invalid');
+    passwordInput.nextElementSibling.classList.add('hidden');
+
+    checkboxInput.classList.remove('invalid');
+
+    if (!firstNameInput.value || !lastNameInput.value || !emailInput.value || !passwordInput.value) {
+        firstNameInput.classList.add('invalid');
+        firstNameInput.nextElementSibling.classList.remove('hidden');
+
+        lastNameInput.classList.add('invalid');
+        lastNameInput.nextElementSibling.classList.remove('hidden');
+
+        emailInput.classList.add('invalid');
+        emailInput.nextElementSibling.classList.remove('hidden');
+
+        passwordInput.classList.add('invalid');
+        passwordInput.nextElementSibling.classList.remove('hidden');
+
+        checkboxInput.classList.add('invalid');
+    }
+};
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    validateInput();
+});
