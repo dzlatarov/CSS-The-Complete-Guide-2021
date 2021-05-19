@@ -54,35 +54,32 @@ var passwordInput = document.querySelector('input[name="password"]');
 var checkboxInput = document.querySelector('input[type="checkbox"]');
 
 const validateInput = () => {
-    firstNameInput.classList.remove('invalid');
-    firstNameInput.nextElementSibling.classList.add('hidden');
-
-    lastNameInput.classList.remove('invalid');
-    lastNameInput.nextElementSibling.classList.add('hidden');
-
-    emailInput.classList.remove('invalid');
-    emailInput.nextElementSibling.classList.add('hidden');
-
-    passwordInput.classList.remove('invalid');
-    passwordInput.nextElementSibling.classList.add('hidden');
-
-    checkboxInput.classList.remove('invalid');
-
-    if (!firstNameInput.value || !lastNameInput.value || !emailInput.value || !passwordInput.value) {
+    firstNameInput.value ? firstNameInput.classList.remove('invalid') :
         firstNameInput.classList.add('invalid');
+
+    firstNameInput.value ? firstNameInput.nextElementSibling.classList.add('hidden') :
         firstNameInput.nextElementSibling.classList.remove('hidden');
 
+    lastNameInput.value ? lastNameInput.classList.remove('invalid') :
         lastNameInput.classList.add('invalid');
+
+    lastNameInput.value ? lastNameInput.nextElementSibling.classList.add('hidden') :
         lastNameInput.nextElementSibling.classList.remove('hidden');
 
+    emailInput.value ? emailInput.classList.remove('invalid') :
         emailInput.classList.add('invalid');
+
+    emailInput.value ? emailInput.nextElementSibling.classList.add('hidden') :
         emailInput.nextElementSibling.classList.remove('hidden');
 
+    passwordInput.value ? passwordInput.classList.remove('invalid') :
         passwordInput.classList.add('invalid');
+
+    passwordInput.value ? passwordInput.nextElementSibling.classList.add('hidden') :
         passwordInput.nextElementSibling.classList.remove('hidden');
 
+    checkboxInput.checked ? checkboxInput.classList.remove('invalid') :
         checkboxInput.classList.add('invalid');
-    }
 };
 
 form.addEventListener('submit', (e) => {
