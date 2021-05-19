@@ -56,7 +56,9 @@ main {
     border: 1px solid darkgreen;
     background-color: white;
     color: darkgreen;
-    padding: 0.9rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
 }
 
 .clearfix {
